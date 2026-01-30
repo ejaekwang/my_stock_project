@@ -6,8 +6,7 @@ import pandas as pd
 df = fdr.DataReader('042660', '2024-01-01', '2026-01-23')
 
 # 2. 월별 평균 데이터로 계산하기
-df_monthly = df['Close'].resample('ME' \
-'gi').mean()
+df_monthly = df['Close'].resample('ME').mean()
 
 # 3. 점선 그래프 그리기
 plt.figure(figsize=(10, 5))
