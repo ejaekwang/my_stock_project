@@ -17,4 +17,7 @@ plt.grid(True)
 # 4. 그래프 저장 및 엑셀 저장
 plt.savefig('stock_chart.png') # 그래프 이미지 저장
 df.to_excel('hanwha_ocean.xlsx') # 데이터 엑셀 저장
+# 5. 깃허브에서 바로 볼 수 있는 CSV 파일로도 저장하기
+df.to_csv('hanwha_ocean.csv', encoding='utf-8-sig')
 print("작업 완료! 엑셀 파일과 그래프 이미지가 생겼어요.")
+# 5. 깃허브에서 바로 볼 수 있는 CSV 파일로도 저장하기
