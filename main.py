@@ -2,8 +2,8 @@ import FinanceDataReader as fdr
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# 1. 한화오션(042660) 데이터 가져오기 (2024년 ~ 2026년 1월 23일)
-df = fdr.DataReader('042660', '2024-01-01', '2026-01-23')
+# 1. sk하이닉스(000660) 데이터 가져오기 (2024년 ~ 2026년 1월 23일)
+df = fdr.DataReader('000660', '2024-01-01', '2026-01-23')
 
 # 2. 월별 평균 데이터로 계산하기
 df_monthly = df['Close'].resample('ME').mean()
